@@ -10,4 +10,4 @@
 [[redirects]]
   from = "/api/download-contacts"
   to = "/.netlify/functions/save-contact"
-  status = 200git
+  status = 200
