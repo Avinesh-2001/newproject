@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="National Petrolube Solutions - Leading provider of industrial lubricants and chemical solutions since 2014.">
     <title>National Petrolube Solutions - Industrial Excellence Since 2014</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     <style>
@@ -19,7 +20,6 @@
             overflow-x: hidden;
         }
 
-        /* Background Animation */
         .bg-animation {
             position: fixed;
             top: 0;
@@ -31,7 +31,7 @@
                 radial-gradient(circle at 20% 80%, rgba(255, 215, 7, 0.15) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(255, 185, 50, 0.15) 0%, transparent 50%),
                 radial-gradient(circle at 40% 40%, rgba(255, 160, 0, 0.1) 0%, transparent 50%);
-            animation: bgPulse 8s ease-in-out infinite alternate; /* Fixed syntax */
+            animation: bgPulse 8s ease-in-out infinite alternate;
         }
 
         @keyframes bgPulse {
@@ -39,7 +39,6 @@
             100% { opacity: 1; transform: scale(1.1); }
         }
 
-        /* Header */
         header {
             position: fixed;
             top: 0;
@@ -115,7 +114,6 @@
             box-shadow: 0 5px 15px rgba(255, 165, 0, 0.4);
         }
 
-        /* Hamburger Icon */
         .hamburger {
             display: none;
             font-size: 2rem;
@@ -130,7 +128,6 @@
             color: #FFA500;
         }
 
-        /* Sidebar */
         .sidebar {
             position: fixed;
             top: 0;
@@ -191,7 +188,6 @@
             box-shadow: 0 5px 15px rgba(255, 165, 0, 0.4);
         }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
             .nav-menu {
                 display: none;
@@ -214,12 +210,10 @@
             }
         }
 
-        /* Main Content */
         main {
             margin-top: 80px;
         }
 
-        /* Hero Section */
         .hero {
             height: 100vh;
             display: flex;
@@ -293,7 +287,6 @@
             box-shadow: 0 10px 25px rgba(255, 165, 0, 0.4);
         }
 
-        /* Sections */
         .section {
             padding: 5rem 2rem;
             max-width: 1200px;
@@ -319,7 +312,6 @@
             border-radius: 2px;
         }
 
-        /* About Section */
         .about-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -360,7 +352,6 @@
             border-color: #FFD700;
         }
 
-        /* Products Grid */
         .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -423,7 +414,6 @@
             color: #FFA500;
         }
 
-        /* Industries Section */
         .industries-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -446,7 +436,6 @@
             box-shadow: 0 10px 20px rgba(255, 165, 0, 0.2);
         }
 
-        /* Contact Section */
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -476,7 +465,6 @@
             display: block;
         }
 
-        /* Footer */
         footer {
             background: rgba(26, 26, 46, 0.9);
             padding: 2rem;
@@ -485,7 +473,6 @@
             margin-top: 3rem;
         }
 
-        /* Contact Form */
         .contact-form {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(15px);
@@ -598,7 +585,6 @@
             transform: translateY(-1px) scale(1.01);
         }
 
-        /* Scroll Animations */
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
@@ -610,7 +596,6 @@
             transform: translateY(0);
         }
 
-        /* Loading Animation */
         .loader {
             position: fixed;
             top: 0;
@@ -640,7 +625,6 @@
             100% { transform: rotate(360deg); }
         }
 
-        /* Form Feedback */
         .form-message {
             display: none;
             text-align: center;
@@ -663,15 +647,12 @@
     </style>
 </head>
 <body>
-    <!-- Loading Screen -->
     <div class="loader" id="loader">
         <div class="oil-wave"></div>
     </div>
 
-    <!-- Background Animation -->
     <div class="bg-animation"></div>
 
-    <!-- Header -->
     <header>
         <nav>
             <div class="logo">National Petrolube Solutions</div>
@@ -699,7 +680,6 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-content">
                 <h1>Industrial Excellence Since 2014</h1>
@@ -708,7 +688,6 @@
             </div>
         </section>
 
-        <!-- About Section -->
         <section id="about" class="section fade-in">
             <h2>About National Petrolube Solutions</h2>
             <div class="about-grid">
@@ -727,7 +706,6 @@
             </div>
         </section>
 
-        <!-- Products Section -->
         <section id="products" class="section fade-in">
             <h2>Our Product Portfolio</h2>
             <div class="products-grid">
@@ -784,7 +762,6 @@
             </div>
         </section>
 
-        <!-- Industries Section -->
         <section id="industries" class="section fade-in">
             <h2>Industries We Serve</h2>
             <div class="industries-grid">
@@ -799,11 +776,9 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="section fade-in">
             <h2>Contact Us</h2>
             
-            <!-- Hidden Form for Netlify Bots -->
             <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
                 <input type="hidden" name="form-name" value="contact" />
                 <input type="text" name="fullName" aria-label="Full Name" />
@@ -813,7 +788,6 @@
                 <textarea name="message" aria-label="Message"></textarea>
             </form>
 
-            <!-- Contact Form -->
             <div class="contact-form fade-in">
                 <h3>Send us a message</h3>
                 <form id="contactForm" name="contact" method="POST" data-netlify="true">
@@ -846,7 +820,7 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Message *</label>
-                        <textarea id="message" name="message" required placeholder="Tell us about your requirements..." aria-required="true" aria-label="Message"></textarea>
+                        <textarea id="message" name="message" required placeholder="Type your requirements..." aria-required="true" aria-label="Message"></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Send Message</button>
                     <div class="form-message" id="formMessage"></div>
@@ -878,7 +852,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>© 2025 National Petrolube Solutions. All rights reserved. | Industrial Excellence Since 2014</p>
     </footer>
@@ -900,37 +873,41 @@
         const sidebar = document.getElementById('sidebar');
         const closeSidebar = document.getElementById('close-sidebar');
 
-        hamburger.addEventListener('click', () => {
-            sidebar.classList.add('active');
-        });
+        if (hamburger && sidebar && closeSidebar) {
+            hamburger.addEventListener('click', () => {
+                sidebar.classList.add('active');
+            });
 
-        closeSidebar.addEventListener('click', () => {
-            sidebar.classList.remove('active');
-        });
-
-        // Close sidebar when clicking outside
-        document.addEventListener('click', (e) => {
-            if (sidebar.classList.contains('active') && !sidebar.contains(e.target) && !hamburger.contains(e.target)) {
-                sidebar.classList.remove('active');
-            }
-        });
-
-        document.querySelectorAll('.sidebar-menu a').forEach(link => {
-            link.addEventListener('click', () => {
+            closeSidebar.addEventListener('click', () => {
                 sidebar.classList.remove('active');
             });
-        });
+
+            document.addEventListener('click', (e) => {
+                if (sidebar.classList.contains('active') && !sidebar.contains(e.target) && !hamburger.contains(e.target)) {
+                    sidebar.classList.remove('active');
+                }
+            });
+
+            document.querySelectorAll('.sidebar-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    sidebar.classList.remove('active');
+                });
+            });
+        }
 
         // Smooth Scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const targetId = this.getAttribute('href').substring(1);
+                const target = document.getElementById(targetId);
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
                     });
+                } else {
+                    console.warn(`Target element with ID "${targetId}" not found`);
                 }
             });
         });
@@ -954,7 +931,7 @@
             observer.observe(el);
         });
 
-        // Header scroll effect
+        // Header Scroll Effect
         let lastScrollTop = 0;
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
@@ -968,16 +945,62 @@
             lastScrollTop = scrollTop;
         });
 
-        // Parallax effect for hero section
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const hero = document.querySelector('.hero');
-            if (hero) {
-                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-            }
-        });
+        // Form Submission Handling
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const form = e.target;
+                const formData = new FormData(form);
+                const formMessage = document.getElementById('formMessage');
+                const submitBtn = form.querySelector('.submit-btn');
+                
+                submitBtn.textContent = 'Sending...';
+                submitBtn.disabled = true;
+                submitBtn.style.background = 'linear-gradient(45deg, #ccc, #999)';
+                formMessage.style.display = 'none';
+                formMessage.classList.remove('success', 'error');
 
-        // Form submission handling
-       </script>
+                try {
+                    // Submit to Netlify Forms
+                    const netlifyResponse = await fetch('/', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                        body: new URLSearchParams(formData).toString()
+                    });
+
+                    if (!netlifyResponse.ok) {
+                        throw new Error('Netlify form submission failed');
+                    }
+
+                    // Save to CSV via Netlify Function
+                    const functionResponse = await fetch('/api/save-contact', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(Object.fromEntries(formData))
+                    });
+
+                    if (!functionResponse.ok) {
+                        throw new Error('Failed to save to CSV');
+                    }
+
+                    formMessage.textContent = 'Thank you for your submission!';
+                    formMessage.classList.add('success');
+                    formMessage.style.display = 'block';
+                    form.reset();
+                } catch (error) {
+                    console.error('Form submission error:', error);
+                    formMessage.textContent = 'Error submitting form. Please try again.';
+                    formMessage.classList.add('error');
+                    formMessage.style.display = 'block';
+                } finally {
+                    submitBtn.textContent = 'Send Message';
+                    submitBtn.disabled = false;
+                    submitBtn.style.background = 'linear-gradient(45deg, #FFD700, #FFA500)';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
